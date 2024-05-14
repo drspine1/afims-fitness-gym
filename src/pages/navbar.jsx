@@ -10,12 +10,12 @@ import { useState } from "react";
 const Navbar = () => {
   const[showNav,setShowNav] = useState(false)
   const navActive = ' bg-primaryColor-200 p-2 rounded-lg'
- 
+  const note = ""
   return ( 
     <>
     <nav className="bg-secondarybg2 fixed   top-0 left-0 w-full flex items-center justify-between p-8 h-[5rem] z-50">
       <div className="logo shadow-md">
-     <h1 className="text-2xl md:text-3xl uppercase font-bold text-whitecolor">Afims-fitness <span className="text-primaryColor-200">gym</span></h1>
+     <h1 className="text-2xl md:text-3xl uppercase font-bold text-whitecolor">i-fitness <span className="text-primaryColor-200">gym</span></h1>
       </div>
       <ul className="hidden lg:block">
         <NavLink to="/"className={({isActive}) => isActive ? navActive : note}><p className="text-2xl font-medium capitalize mx-4 text-whitecolor  inline-block">home</p></NavLink>
