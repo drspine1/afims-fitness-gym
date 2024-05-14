@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{
+  overflow-x: hidden;
+}
+body{
+  background-color: #000e17;
+}
+.nav{
+  transition: 0.5s;
+
+}
+.join, .facility{
+  transition: 0.5s;
+}
+
+
+.activeNav{
+  position: relative;
+}
+.activeNav::after{
+  content: "";
+  position: absolute;
+  background-color: #001e2d;
+  width: 1.2rem;
+  height: 1.2rem;
+  left: 2rem;
+  display: block;
+  transform: rotate(45deg);
+  margin-top: 0.9rem;
+}
