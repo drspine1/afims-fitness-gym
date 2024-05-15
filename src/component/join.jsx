@@ -25,12 +25,12 @@ const Join = () => {
     <>
     <motion.div className="join-section mt-52 mx-auto text-center px-6 md:px-40"
   
-   initial={{opacity:0, y:'45px'}}
+   initial={{opacity:0, y:'25px'}}
    whileInView={{opacity:1, y:0 }}
-   transition={{delay:0.2, duration:0.3,staggerChildren:2}}
-   viewport={{once:true, amount:0.4 }}
+   transition={{duration:0.3}}
+   viewport={{once:true, amount:0.2 }}
     >
-      <h2 className="text-3xl font-bold text-whitecolor capitalize"><span className=" text-primaryColor-200 ">/</span> why you should join us </h2>
+      <h2 className="text-2xl font-bold text-whitecolor capitalize"><span className=" text-primaryColor-200 ">/</span> why you should join us </h2>
       <h4 className="text-primaryColor-100 pt-3">Best gym center in the city</h4>
       <div className="join-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12 mb-6">
         <div className="join bg-secondarybg4 p-6 rounded-lg hover:bg-transparent hover:border-4 hover:border-secondarybg4 border-4 border-transparent">

@@ -4,7 +4,7 @@ const HeroSection = () => {
   return ( 
     <>
     <div className="relative w-full h-full mt-32 md:mt-0 ">
-      <motion.div className="left text-white mt-[10%] w-[100%] md:w-[60%] lg:w-[50%] p-12 lg:pl-24  z-[-5] overflow-hidden"
+      <motion.div className="left text-white mt-[10%] w-[100%] md:w-[60%] lg:w-[50%] p-12 lg:pl-24  z-[-5] "
       initial={{x:'-10vw',opacity:0}}
       animate={{x:0,opacity:1}}
       transition={{delay:0.2,duration:0.5}}
@@ -22,7 +22,7 @@ const HeroSection = () => {
       <div className="right">
         <div className=" "> </div>
         
-     <img src="/images/gallery.jpg" alt="" className="absolute h-[calc(100vh-5rem)] overflow-hidden right-0 top-[-3rem]  w-[50%]  z-[-10]  opacity-[0.7]"/>
+     <img src="/images/gallery.jpg" alt="" className="absolute h-[calc(100vh-5rem)] overflow-hidden right-0 top-[-3rem]  w-[50%]  z-[-10]  opacity-[0.7] hidden md:block"/>
         </div>
 
     </div>
