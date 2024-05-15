@@ -7,7 +7,7 @@ const Footer = () => {
     <>
     <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-7 md:p-16   bg-secondarybg4  mt-32 mx-auto text-center">
       <div className=" mt-4">
-        <h1 className="pb-4 uppercase text-2xl font-medium text-whitecolor">i-fitness <span className="text-primaryColor-100">gym</span></h1>
+        <h1 className="pb-4 uppercase text-2xl font-medium text-whitecolor">afims-fitness <span className="text-primaryColor-100">gym</span></h1>
         <p className="text-lightcolor  text-lg font-medium pb-2 w-full">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, rem reiciendis vero rerum est cumque provident animi aperiam molestiae voluptas.</p>
         <div className="socials flex mt-3 mx-auto text-center justify-center"  >
             <FaSquareXTwitter  className="text-2xl text-whitecolor hover:text-whitecolor hover:transform hover:-translate-y-1 transition duration-500 mx-2"/>
