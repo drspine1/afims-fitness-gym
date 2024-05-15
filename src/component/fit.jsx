@@ -7,10 +7,14 @@ const Fit = () => {
       <div className="fit-img">
         <img src="/images/gym.jpg" alt=""  className="w-[100rem] flex-1"/>
       </div>
-      <motion.div className="fit-content ml-0 md:ml-5 mt-8 md:mt-0 px-4 " initial={{opacity:0, x:'40px '}}
-      whileInView={{opacity:1, x:0}}
+      <motion.div 
+      initial={{opacity:0, y:'45px '}}
+      whileInView={{opacity:1, y:0}}
       transition={{delay:0.3, duration:0.3}}
       viewport={{once:true, amount:0.2 }}
+      
+      
+      className="fit-content ml-0 md:ml-5 mt-8 md:mt-0 px-4 " 
      
       >
         <h3 className="text-2xl capitalize font-bold text-primaryColor-200

@@ -25,12 +25,12 @@ const Navbar = () => {
         <NavLink to="/contact" className={({isActive}) => isActive ? navActive : note}><p className="text-2xl font-medium capitalize mx-4 text-whitecolor  transition duration-500 inline-block">contact</p></NavLink>
       </ul>
 
-      <ul className={` nav z-50 lg:hidden absolute p-6 pt-8 bg-primaryColor-100 left-0 top-[100%] w-4/6 h-screen transition duration-500 ${showNav ?"ml-0":"ml-[-100%]"}`}>
-        <NavLink activeClass='active' to="/" className="text-2xl font-medium capitalize mx-4 text-whitecolor  transition duration-500 block pb-4" onClick={()=> setShowNav(false)}>home</NavLink>
-        <NavLink activeClass='active' to="/about" className="text-2xl font-medium capitalize mx-4 text-whitecolor  block pb-4" onClick={()=> setShowNav(false)}>about</NavLink>
-        <NavLink activeClass='active' to="/gallery" className="text-2xl font-medium capitalize mx-4 text-whitecolor  block pb-4" onClick={()=> setShowNav(false)}>gallery</NavLink>
-        <NavLink activeClass="active" to="/plans" className="text-2xl font-medium capitalize mx-4 text-whitecolor  block pb-4" onClick={()=> setShowNav(false)}>plans</NavLink>
-        <NavLink activeClass='active' to="/contact" className="text-2xl font-medium capitalize mx-4 text-whitecolor  block pb-4" onClick={()=> setShowNav(false)}>contact</NavLink>
+      <ul className={` nav z-50 lg:hidden absolute p-6 pt-8 bg-primaryColor-100 right-0 top-[100%] w-4/6 h-screen transition duration-500 ${showNav ?"mr-0":"mr-[-100%]"}`}>
+        <NavLink activeClass='active' to="/" className="text-2xl text-center font-medium capitalize mx-4 text-whitecolor  transition duration-500 block pb-4" onClick={()=> setShowNav(false)}>home</NavLink>
+        <NavLink activeClass='active' to="/about" className="text-2xl font-medium capitalize mx-4 text-whitecolor text-center block pb-4" onClick={()=> setShowNav(false)}>about</NavLink>
+        <NavLink activeClass='active' to="/gallery" className="text-2xl font-medium capitalize mx-4 text-whitecolor text-center block pb-4" onClick={()=> setShowNav(false)}>gallery</NavLink>
+        <NavLink activeClass="active" to="/plans" className="text-2xl font-medium capitalize mx-4 text-whitecolor text-center block pb-4" onClick={()=> setShowNav(false)}>plans</NavLink>
+        <NavLink activeClass='active' to="/contact" className="text-2xl font-medium capitalize mx-4 text-whitecolor text-center block pb-4" onClick={()=> setShowNav(false)}>contact</NavLink>
       </ul>
       <ul className="socials hidden lg:flex">
            <Link className="mx-2"><FaSquareXTwitter className="text-2xl text-primaryColor-200 hover:text-whitecolor hover:transform hover:-translate-y-1 transition duration-500"/></Link>
